@@ -33,4 +33,10 @@ module.exports = {
   etherscan: {
     apiKey: ETHERSCAN_API_KEY
   },
+  settings: {
+    optimizer: {
+      enabled: true,
+      runs: 200,
+    },
+  },
 };

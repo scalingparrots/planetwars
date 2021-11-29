@@ -1,3 +1,6 @@
+const hre = require("hardhat");
+import {run} from "hardhat";
+
 const { ethers, upgrades } = require("hardhat");
 
 // scripts/deploy.js
@@ -10,13 +13,15 @@ async function main() {
     const GoldFactory = await ethers.getContractFactory("Gold");
 
     console.log("Deploying Gold with address: " + deployer.address);
+    console.log("Balance of address: " + await deployer.getBalance())
     const GoldContract = await upgrades.deployProxy(GoldFactory, []);
     await GoldContract.deployed();
     console.log("Gold deployed at: ", GoldContract.address);
-
+    await new Promise((f) => setTimeout(f, 10000));
     await GoldContract.grantRole(MINTER_ROLE, deployer.address);
     await new Promise((f) => setTimeout(f, 10000));
     await GoldContract.mint(deployer.address, INITIAL_MINT);
+    await new Promise((f) => setTimeout(f, 10000));
     await GoldContract.revokeRole(MINTER_ROLE, deployer.address);
 }
 
