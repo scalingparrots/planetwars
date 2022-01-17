@@ -54,7 +54,6 @@ The various libraries are called up passing the data they need to return their o
 ![Sky3Layer](asset/sky3.jpg)
 ![Sky4Layer](asset/sky4.jpg)
 
-
 **SkyCircle** and **SkyRhombus** add figures of random size and position to the background
 
 ![circleAndRhombus](asset/circleAndRhombus.jpg)
@@ -68,15 +67,19 @@ The various libraries are called up passing the data they need to return their o
 
 **SkyRing** can return 3 type of ring based from habitability
 
-![habitability2](asset/ring1.jpg)
-![habitability3](asset/ring2.jpg)
-![habitability4](asset/ring3.jpg)
+![ring1](asset/ring1.jpg)
+![ring2](asset/ring2.jpg)
+![ring3](asset/ring3.jpg)
 
 **PictureFrame** and **DataDescriptor** that enclose the planet and display the metadata
-
-![habitability4](asset/pictureFrame.jpg)
+    
+![pictureFrame](asset/pictureFrame.jpg)
 
 **PlanetColor** can return 10 color palettes that have different combinations within them
 
 ### Planets name
 **PlanetsName** contract are versionable and allows planet owners to name and see it appear on their NFTs
+
+## Test
+
+## Scripts
