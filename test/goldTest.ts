@@ -33,9 +33,9 @@ before(async function() {
   expect(await GoldContract.hasRole(roleAdmin, deployer.address)).to.be.true
 });
 
-describe("Testing... ", async () => {
+describe("Testing gold... ", async () => {
 
-  describe("Testing ERC20 standard", async () => {
+  describe("Test standard", async () => {
 
     it("should test grant role minter", async () => {
       await GoldContract.grantRole(MINTER_ROLE, deployer.address);
