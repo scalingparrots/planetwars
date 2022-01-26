@@ -6,7 +6,7 @@ import "@openzeppelin/hardhat-upgrades";
 import * as dotenv from 'dotenv';
 
 dotenv.config();
-const { PRIVATE_KEY } = process.env;
+const { PRIVATE_KEY_OWNER_GOLD, PRIVATE_KEY_OWNER_PLANETS, PRIVATE_KEY_WORKER_PLANETS } = process.env;
 const { ETHERSCAN_API_KEY } = process.env;
 
 module.exports = {
@@ -16,13 +16,13 @@ module.exports = {
       url: "https://bsc-dataseed.binance.org/",
       chainId: 56,
       gasPrice: 20000000000,
-      accounts: [PRIVATE_KEY]
+      accounts: [PRIVATE_KEY_OWNER_PLANETS]
     },
     testnet: {
       url: "https://data-seed-prebsc-1-s1.binance.org:8545",
       chainId: 97,
       gasPrice: 20000000000,
-      accounts: [PRIVATE_KEY]
+      accounts: [PRIVATE_KEY_WORKER_PLANETS]
     },
     localhost: {
       chainId: 31337,
