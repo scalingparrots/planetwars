@@ -26,6 +26,7 @@
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^2.1.6",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^4.4.0",
     "@openzeppelin/contracts-upgradeable": "^4.4.0",
     "@openzeppelin/hardhat-upgrades": "^1.12.0",
     "@types/mocha": "^9.0.0",
@@ -36,6 +37,7 @@
     "hardhat-upgrades": "^0.0.0",
     "mocha": "^7.2.0",
     "ts-node": "^10.4.0",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.2",
+    "base64-sol": "1.0.1"
   }
 }
